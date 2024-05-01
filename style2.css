@@ -1,0 +1,198 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+header {
+	display: flex;
+	 justify-content: space-between; 
+	align-items: center;
+}
+.logopor {
+	text-align: left; 
+	margin-left: 50px;
+
+
+}
+  .navegacion{
+	width: 1000px;
+	margin: 30px auto;
+	background: #fff;
+}
+
+.navegacion ul{
+	list-style: none;
+	margin-left: 50px;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+	margin-right: 50px;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #094464;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.portada{
+		display: flex;
+		justify-content: center;
+		align-items: center;  
+}
+
+
+
+.oferta{
+        margin: auto;
+        text-align: center; 
+ }
+    
+
+
+.productos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; 
+  }
+  
+  .producto {
+	text-align: center; 
+	margin: 15px; 
+  }
+  
+  .producto img {
+	width: 250px; 
+	height: auto;
+  }
+  
+  .producto h3,
+  .producto p {
+	margin: 10px 0; 
+  }
+  
+/*footer*/
+
+footer {
+    background: #094464;
+    padding: 60px 0 30px 0;
+    overflow: hidden;
+    margin-top: auto;
+  }
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo {
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.content-foo p{
+    color: #dad6d6;
+}
+
+.content-foo a{
+    color: #ccc;
+
+
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0;
+    color: #ffffff;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+	.portada img{
+		max-width: 100%;
+    height: auto;
+
+	}
+	body {
+        font-size: 14px;
+    }
+
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .producto {
+        width: 90%;
+        margin: 10px 0;
+    }
+	
+}
+
+.boton {
+    text-align: center; 
+}
+
+.boton a {
+    display: inline-block;
+    padding: 10px 20px; 
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #007bff; 
+    color: #fff; 
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton a:hover {
+    background-color: #0056b3; 
+}
+
